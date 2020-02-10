@@ -1,17 +1,35 @@
-#container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
-.recipe{
-    display: grid;
-    background-color: coral;
-    margin: 12px;
-    justify-items: center;
-    grid-template-rows: 1fr 1fr 2fr;
+.recipe {
+  background-color: orange;
+  margin: 10px;
+  box-shadow: 2px 2px 2px black;
+  display: grid;
+  grid-template-areas:
+    "l l l"
+    "i i i"
+    "i i i"
+    "r r r"
+    "r r r";
+  justify-items: center;
+  
 }
 
-img{
-    width: 40%;
-    height: 30%;
-    
+img {
+  background-color: gray;
+  box-shadow: 2px 2px 2px black;
+  width: 80%;
+  grid-area: i;
+  margin-top: 10px;
+}
+a {
+  grid-area: l;
+}
+
+ul {
+  grid-area: r;
+  display: grid;
+  align-content: flex-start ;
 }
