@@ -12,11 +12,8 @@ router.get(`/recipes/:ingredient`,function(req,res){
     
     request.get(`https://recipes-goodness.herokuapp.com/recipes/${req.params.ingredient}`,function(err,result){
         recipe = JSON.parse(result.body);
-        console.log(recipe);
-         
-        
+        res.send(recipe)
     })
-    res.send('ggg')
 })
 
 
