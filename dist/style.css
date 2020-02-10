@@ -1,0 +1,17 @@
+#container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.recipe{
+    display: grid;
+    background-color: coral;
+    margin: 12px;
+    justify-items: center;
+    grid-template-rows: 1fr 1fr 2fr;
+}
+
+img{
+    width: 40%;
+    height: 30%;
+    
+}
